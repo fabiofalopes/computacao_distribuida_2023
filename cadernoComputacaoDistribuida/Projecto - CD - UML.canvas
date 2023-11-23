@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"bba03eec1c67d013","type":"text","text":"Web service REST","x":-620,"y":-941,"width":300,"height":50},
+		{"id":"d84a2736e0a8383a","type":"text","text":"Web service SOAP","x":-620,"y":-891,"width":300,"height":50},
+		{"id":"65a7a32e55fb1e96","type":"text","text":"FRONTEND","x":-620,"y":-1032,"width":300,"height":90},
+		{"id":"9ea75551ab2c09e2","type":"text","text":"USERS","x":-620,"y":-838,"width":300,"height":50},
+		{"id":"230601e40ddd236b","type":"text","text":"RMI Client","x":-620,"y":-788,"width":300,"height":50},
+		{"id":"91b7c7ed6eaf4b63","type":"text","text":"Cliente Java SOAP","x":-960,"y":-881,"width":203,"height":95},
+		{"id":"d11520840e15d038","type":"text","text":"Cliente Java REST","x":-957,"y":-986,"width":200,"height":95},
+		{"id":"b6fd839804dafeff","type":"text","text":"RMI Server","x":-180,"y":-941,"width":202,"height":57},
+		{"id":"2f9d8c61920ae5b6","type":"text","text":"Database or Files","x":-178,"y":-884,"width":200,"height":95},
+		{"id":"5d14c5378c30f3c2","type":"text","text":"BACKEND","x":-180,"y":-1032,"width":202,"height":90}
+	],
+	"edges":[
+		{"id":"d6277f8dd3eb2ec8","fromNode":"d11520840e15d038","fromSide":"right","toNode":"bba03eec1c67d013","toSide":"left"},
+		{"id":"894afc8b4e56a97e","fromNode":"91b7c7ed6eaf4b63","fromSide":"right","toNode":"d84a2736e0a8383a","toSide":"left"},
+		{"id":"5e04d256fb7a73c6","fromNode":"230601e40ddd236b","fromSide":"right","toNode":"b6fd839804dafeff","toSide":"left"}
+	]
+}

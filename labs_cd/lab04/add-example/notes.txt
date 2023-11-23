@@ -1,0 +1,23 @@
+
+1. Compilei os ficheiros java
+    javac AddClient.java AddServer.java AddServerImpl.java AddServerIntf.java 
+
+    ou para compilar todos os ficheiros de uma vez:
+        javac *.java
+
+2. Start registry
+    rmiregistry 23123
+
+3. Run the server
+    java -Djava.security.policy=policy AddServer 
+(usa a porta default do registry 1099)
+
+4. Run the client
+    java AddClient 127.0.0.1 2 2
+
+
+EXERCICIO:
+    Adicionar a interacao cliente servidor 
+        Subtração
+        Multiplicação
+        Divisão
