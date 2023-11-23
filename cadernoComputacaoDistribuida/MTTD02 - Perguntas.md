@@ -1,12 +1,14 @@
 # 1 
- E boa idea a segurança de uma comunicação cifrada estar baseada no secretismo do algoritmo de cifra ? Porquê ? Qual é a solução correta ?
+ É boa idea a segurança de uma comunicação cifrada estar baseada no secretismo do algoritmo de cifra? Porquê? Qual é a solução correta?
+
+
 
 
 ---
 # 2
-Como é feito 0 controlo de acessos num sistema **DAC (Discretionary Access Control)** ? Ilustre com o seguinte exemplo: um cliente esta a tentar ler um ficheiro remoto, tendo chamado o serviço: **read (ficheiro, utilizador)**
+Como é feito o controlo de acessos num sistema **DAC (Discretionary Access Control)** ? Ilustre com o seguinte exemplo: um cliente esta a tentar ler um ficheiro remoto, tendo chamado o serviço: **read (ficheiro, utilizador)**
 
- 
+
 
 
 ---
