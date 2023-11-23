@@ -1,16 +1,13 @@
 # 1 
- É boa idea a segurança de uma comunicação cifrada estar baseada no secretismo do algoritmo de cifra? Porquê? Qual é a solução correta?
-
-
+ E boa idea a segurança de uma comunicação cifrada estar baseada no secretismo do algoritmo de cifra ? Porquê ? Qual é a solução correta ?
 
 
 ---
 # 2
-Como é feito o controlo de acessos num sistema **DAC (Discretionary Access Control)** ? Ilustre com o seguinte exemplo: um cliente esta a tentar ler um ficheiro remoto, tendo chamado o serviço: **read (ficheiro, utilizador)**
+Como é feito 0 controlo de acessos num sistema **DAC (Discretionary Access Control)** ? Ilustre com o seguinte exemplo: um cliente esta a tentar ler um ficheiro remoto, tendo chamado o serviço: **read (ficheiro, utilizador)**
 
 
 
-
 ---
 # 3 
 Considere 2 agentes, A e B, uma autoridade de certificação S, e as 4 mensagens do protocolo Needham - Schroeder de autenticação com chave secreta:
@@ -28,14 +25,26 @@ Na mensagem 3, como é que B obtém a chave Kab ? Como é que tem a certeza que 
 Descreva resumidamente a função do seguinte componente do WSDL: Message
 
 
+**Message: definição das mensagens trocadas (colecção de parts; part: named argument e respectivo tipo)**
+	- Cada elemento message pode ser usado como mensagem input, output ou fault numa operation
+	- O atributo type da part pode ser qualquer tipo standard do schema XSD ou um tipo definido pelo utilizador
+
 ---
 # 5 
 Descreva 3 ameaças ou ataques a segurança em sistemas distribuídos
+
+DOS
+Man in the middle
+Interferência com o fluxo de mensagens 
 
 
 ---
 # 6 
 Como é feito o controlo de acessos num sistema MAC (Mandatory Access Control) ? lustre com o seguinte exemplo: um cliente esta a tentar ler um ficheiro remoto, tendo chamado o serviço: read (ficheiro, utilizador)
+
+Cliente: qual o nivel de acesso do user
+-> Dependendo doo nivel de acesso, o SO sobre o qual o servidor do requesitante, ira permitir ou nao depe
+
 
 
 ---
@@ -71,6 +80,9 @@ Considere que B recebeu a seguinte mensagem: ```{M)KAPriv```
 B sabe quem enviou esta mensagem? Mais alguém, para além de B, consegue entender o conteúdo desta mensagem? Justifique as suas respostas.
 
 
+A encripta mensagem com a sua chave privada
+Só A conhece a chave privada, no entanto a mensagem pode ser decifrada por quem conhecer a chave publica de A.
+Como B recebe uma mensagem encriptada, se este não souber quem a enviou, ou isto é, se não conhecer a chave publica do remetente, não lhe é possível desencriptar a mensagem. 
 
 
 ---
@@ -79,7 +91,13 @@ Quais são os problemas que se pretendem resolver com os Web Services e porque r
 
  
 
+Web Services foram criados para resolver problemas de integração de sistemas heterogéneos, permitindo que diferentes aplicações comuniquem entre si e compartilhem dados de forma padronizada e independente de plataforma. Além disso, os Web Services também permitem a criação de serviços distribuídos, que podem ser acedidos por diferentes clientes em diferentes locais.
 
+A arquitectura da Web adapta-se a esta realidade
+- Web Services - maior flexibilidade e interoperabilidade
+	- Definição das interfaces de forma independente das linguagens de programação (WSDL)
+	- Clientes e servidores podem estar escritos em linguagens diferentes
+	- Formato das mensagens independente da implementação (SOAP)
 
 ---
 # 10
@@ -99,3 +117,7 @@ public class Server implements Hello {
 No exemplo de Java RMI acima, descreva e explique o que so e para que servem no contexto do Java RMI a **interface Hello** e a **class Server**.
 
 
+
+R:
+**Interface Hello**: Contem as definições dos métodos disponíveis no servidor RMI que podem ser invocados remotamente;
+**Class server**: implementa os métodos disponíveis na interface;
