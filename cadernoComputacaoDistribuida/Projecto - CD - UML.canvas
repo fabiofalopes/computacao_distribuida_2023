@@ -1,19 +1,23 @@
 {
 	"nodes":[
-		{"id":"bba03eec1c67d013","type":"text","text":"Web service REST","x":-620,"y":-941,"width":300,"height":50},
-		{"id":"d84a2736e0a8383a","type":"text","text":"Web service SOAP","x":-620,"y":-891,"width":300,"height":50},
-		{"id":"65a7a32e55fb1e96","type":"text","text":"FRONTEND","x":-620,"y":-1032,"width":300,"height":90},
-		{"id":"9ea75551ab2c09e2","type":"text","text":"USERS","x":-620,"y":-838,"width":300,"height":50},
-		{"id":"230601e40ddd236b","type":"text","text":"RMI Client","x":-620,"y":-788,"width":300,"height":50},
-		{"id":"91b7c7ed6eaf4b63","type":"text","text":"Cliente Java SOAP","x":-960,"y":-881,"width":203,"height":95},
-		{"id":"d11520840e15d038","type":"text","text":"Cliente Java REST","x":-957,"y":-986,"width":200,"height":95},
-		{"id":"b6fd839804dafeff","type":"text","text":"RMI Server","x":-180,"y":-941,"width":202,"height":57},
-		{"id":"2f9d8c61920ae5b6","type":"text","text":"Database or Files","x":-178,"y":-884,"width":200,"height":95},
-		{"id":"5d14c5378c30f3c2","type":"text","text":"BACKEND","x":-180,"y":-1032,"width":202,"height":90}
+		{"id":"e73879b691748f54","type":"text","text":"Questões para o prof:\n\n- Login ? sim\n- User podem-se registar\n- Users\n\t- Que tipo de características tem os users\n\t\t- User/Pass -> idela estar cifrada\n\t\t\t- Email?, .. \n- Questão front-end e back-end:\n\t- Mesma maquina ou maquinas diferentes?\n\t\t- Docker, desde que sejam 2 subredes diferentes\n\t\t\n- ","x":-2123,"y":-2060,"width":603,"height":480},
+		{"id":"5d14c5378c30f3c2","type":"text","text":"BACKEND","x":-703,"y":-1357,"width":301,"height":90},
+		{"id":"b6fd839804dafeff","type":"text","text":"RMI Server","x":-703,"y":-1266,"width":301,"height":57},
+		{"id":"5797a18bc976e215","type":"text","text":"**Metodos backend**\n\n4.1. Reservarsombrinha\n4.2. Cancelarsombrinha\n4.3. Listarsombrinhas\n\n\n","x":-701,"y":-1640,"width":301,"height":260},
+		{"id":"2f9d8c61920ae5b6","type":"text","text":"Database or Files","x":-700,"y":-1209,"width":298,"height":95},
+		{"id":"d11520840e15d038","type":"text","text":"Cliente Java REST","x":-1460,"y":-1314,"width":200,"height":95},
+		{"id":"91b7c7ed6eaf4b63","type":"text","text":"Cliente Java SOAP","x":-1460,"y":-1208,"width":203,"height":95},
+		{"id":"d84a2736e0a8383a","type":"text","text":"Web service SOAP","x":-1123,"y":-1219,"width":300,"height":50},
+		{"id":"9ea75551ab2c09e2","type":"text","text":"USERS","x":-1123,"y":-1166,"width":300,"height":50},
+		{"id":"230601e40ddd236b","type":"text","text":"RMI Client","x":-1123,"y":-1116,"width":300,"height":50},
+		{"id":"65a7a32e55fb1e96","type":"text","text":"FRONTEND","x":-1123,"y":-1360,"width":300,"height":90},
+		{"id":"bba03eec1c67d013","type":"text","text":"Web service REST","x":-1123,"y":-1269,"width":300,"height":50},
+		{"id":"e9818e927cae5071","type":"text","text":"**Metodos Frontend**\n\n4.4. RegistarUtilizador\n\n\n- Autenticar","x":-1123,"y":-1640,"width":300,"height":260}
 	],
 	"edges":[
 		{"id":"d6277f8dd3eb2ec8","fromNode":"d11520840e15d038","fromSide":"right","toNode":"bba03eec1c67d013","toSide":"left"},
 		{"id":"894afc8b4e56a97e","fromNode":"91b7c7ed6eaf4b63","fromSide":"right","toNode":"d84a2736e0a8383a","toSide":"left"},
-		{"id":"5e04d256fb7a73c6","fromNode":"230601e40ddd236b","fromSide":"right","toNode":"b6fd839804dafeff","toSide":"left"}
+		{"id":"5e04d256fb7a73c6","fromNode":"230601e40ddd236b","fromSide":"right","toNode":"b6fd839804dafeff","toSide":"left"},
+		{"id":"32b0a4245dbf8c83","fromNode":"d84a2736e0a8383a","fromSide":"top","toNode":"bba03eec1c67d013","toSide":"bottom"}
 	]
 }

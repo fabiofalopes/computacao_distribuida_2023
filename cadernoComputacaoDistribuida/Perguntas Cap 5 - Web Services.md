@@ -5,7 +5,7 @@
 - Aplicações de Web Services
 
 - **Modelo de Execução Web Services (WS)**  
-	- Register, Discover, Invoke  
+	- Register, Discover, Invoke
 - **O protocolo SOAP**  
 	- Envelope, Headers e Body  
 - **Linguagem de Definição de Serviços**  

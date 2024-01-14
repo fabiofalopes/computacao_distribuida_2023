@@ -2,11 +2,18 @@
  E boa idea a segurança de uma comunicação cifrada estar baseada no secretismo do algoritmo de cifra ? Porquê ? Qual é a solução correta ?
 
 
+
+
 ---
 # 2
-Como é feito 0 controlo de acessos num sistema **DAC (Discretionary Access Control)** ? Ilustre com o seguinte exemplo: um cliente esta a tentar ler um ficheiro remoto, tendo chamado o serviço: **read (ficheiro, utilizador)**
+Como é feito o controlo de acessos num sistema **DAC (Discretionary Access Control)** ? Ilustre com o seguinte exemplo: um cliente esta a tentar ler um ficheiro remoto, tendo chamado o serviço: **read (ficheiro, utilizador)**
 
 
+Uma Access Control List (ACL) é uma lista de permissões que define quais utilizadores ou grupos têm acesso a determinados recursos num sistema. Guardadas junto de cada objecto. Lista de pares (agente, direitos de acesso)
+No modelo DAC (Discretionary Access Control), a ACL é usada para controlar o acesso a arquivos e pastas. 
+
+Na aula: 
+- Objecto contendo quais operações cada agente pode fazer 
 
 ---
 # 3 
@@ -17,8 +24,15 @@ Considere 2 agentes, A e B, uma autoridade de certificação S, e as 4 mensagens
 3. A -> B: {A, Ta}Kab, {Kab, A, Ts}Kb
 4. B -> A: {Ta+1}Kab
 ```
-Na mensagem 3, como é que B obtém a chave Kab ? Como é que tem a certeza que a chave é valida?
+Na mensagem 3, como é que B obtém a chave Kab? Como é que tem a certeza que a chave é valida?
 
+
+- Quando A pede chave de B a S:
+	- S envia Kab para A , encriptada com a chave de B
+
+No protocolo Needham-Schroeder, B acredita que a mensagem 3 vem de A porque a mensagem contém um nonce (um número usado apenas uma vez) que foi criado por B e enviado para A na mensagem 2. A mensagem 3 contém o nonce de B, o que prova que a mensagem foi enviada por alguém que conhece o nonce de B, que é A.
+
+
 
 ---
 # 4
