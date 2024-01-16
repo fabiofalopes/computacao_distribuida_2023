@@ -16,7 +16,7 @@ Computação Distribuida 2023/2024
 - Invocação remota de objetos (RMI): Conceito de objetos distribuídos, interfaces remotas, instanciação remota
 - Java RMI: descrição, exemplos
 
-## Teóricas: Cap. 5 - Web Services Ficheiro
+## Cap. 5 - Web Services Ficheiro
 - Objetivos e aplicações de Web Services (WS), exemplos
 - Linguagem de Definição de Serviços (WSDL)
 - Serviço de Directório de WS UDDI, Protocolo SOAP
