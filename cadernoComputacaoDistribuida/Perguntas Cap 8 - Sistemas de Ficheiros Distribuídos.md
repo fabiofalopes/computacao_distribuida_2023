@@ -126,7 +126,7 @@ Em resumo, o controlo de acessos num sistema de ficheiros distribuído é uma co
 
 # Pagina 37
 ## 1. No NFS, que estado mantém o servidor sobre os clientes?
-No NFS (Network File System), o servidor mantém um estado mínimo ou nenhum sobre os clientes. O NFS foi projetado para ser um sistema de arquivos distribuído stateless, o que significa que o servidor não precisa manter informações sobre o estado dos clientes ou das operações de arquivos que estão sendo realizadas por eles. Isso é mencionado no [[cap8]] quando se discute a implementação do servidor NFS e a sua interação com os volumes locais através do nível VFS (Virtual File System).
+No NFS (Network File System), o servidor mantém um estado mínimo ou nenhum sobre os clientes. O NFS foi projetado para ser um sistema de arquivos distribuído stateless, o que significa que o servidor não precisa manter informações sobre o estado dos clientes ou das operações de arquivos que estão sendo realizadas por eles. Isso é mencionado no [[cap8 - Sistemas de Ficheiros Distribuídos]] quando se discute a implementação do servidor NFS e a sua interação com os volumes locais através do nível VFS (Virtual File System).
 
 A abordagem stateless do NFS simplifica o design do servidor e melhora a sua robustez em face de falhas de clientes ou de rede, pois não há necessidade de manter ou recuperar o estado do cliente após uma falha. No entanto, isso também significa que o NFS não pode garantir a coerência de cache tão fortemente quanto sistemas que mantêm mais estado, como o AFS, que utiliza um mecanismo de callback para manter a coerência entre os caches dos clientes e o servidor.
 
@@ -161,7 +161,7 @@ Quando um cliente NFS tenta aceder a um ficheiro, o processo de resolução de n
 
 É importante notar que o NFS utiliza um espaço de nomeação uniforme, o que significa que os mesmos pathnames são utilizados para aceder a ficheiros locais ou remotos, proporcionando transparência de localização aos utilizadores e aplicações.
 
-A resolução de nomes no NFS é descrita no [[cap8]] nas secções que abordam a organização do sistema de ficheiros distribuído, a arquitetura NFS e a operação `lookup` como parte da interface do serviço de nomeação.
+A resolução de nomes no NFS é descrita no [[cap8 - Sistemas de Ficheiros Distribuídos]] nas secções que abordam a organização do sistema de ficheiros distribuído, a arquitetura NFS e a operação `lookup` como parte da interface do serviço de nomeação.
 
 
 ## 5. Como são otimizadas as operações de leitura e escrita através da cache?
@@ -265,11 +265,5 @@ O AFS (Andrew File System) é considerado mais escalável que o NFS (Network Fil
 4. Escalabilidade horizontal: o AFS é projetado para ser escalável horizontalmente, permitindo a adição de novos servidores e clientes sem afetar o desempenho do sistema ,[object Object],.
 
 Esses fatores contribuem para tornar o AFS mais escalável que o NFS, especialmente em ambientes com grande número de usuários e acesso simultâneo a ficheiros distribuídos ,[object Object],.
-
-
-
-
-
-
 
 
