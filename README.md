@@ -40,3 +40,8 @@ Computação Distribuida 2023/2024
 ## Cap. 9 - Transações Distribuídas Ficheiro
 - Transações atómicas: definição, propriedades ACID, implementação
 - Transações distribuídas: modelo de referência, protocolo Two-Phase Commit
+
+
+--- 
+
+![image](https://github.com/fabiofalopes/computacao_distribuida_2023/assets/67275812/7373904c-a2f4-42f4-a9c5-76a16a7f49b6)
